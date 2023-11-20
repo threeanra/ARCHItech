@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    h2 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+    }
+
+    html{
+        font-family : nunito;
+        scroll-behavior: smooth;
+    }
+
+    .swiper-button-prev{
+        display : none;
+    }
+
+    .swiper-button-next{
+        diplay: none;
+    }
+
+
+}
