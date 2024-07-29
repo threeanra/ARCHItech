@@ -16,6 +16,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <!-- Tailwind -->
   <link rel="stylesheet" href="../dist/tailwind.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      content: ["./src/**/*.{html,js}", "./node_modules/flowbite/**/*.js"],
+      theme: {
+        extend: {
+          fontFamily: {
+            nunito: ["Nunito"],
+            opensans: ["Open Sans"],
+          },
+          colors: {
+            theme: "#F26440",
+            "theme-green": "#286F6C",
+          },
+        },
+      },
+      plugins: [require("flowbite/plugin")],
+      }
+  </script>
   <!-- Icons -->
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
