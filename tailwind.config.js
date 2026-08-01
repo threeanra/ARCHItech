@@ -1,11 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}", "./node_modules/flowbite/**/*.js"],
+  content: ["./src/**/*.{html,js}", "./index.html", "./node_modules/flowbite/**/*.js"],
   theme: {
+    container: {
+      center: true,
+      padding: "1.5rem",
+      screens: {
+        lg: "960px",
+        xl: "1160px",
+        "2xl": "1160px",
+      },
+    },
     extend: {
       fontFamily: {
-        nunito: ["Nunito"],
-        opensans: ["Open Sans"],
+        nunito: ["Nunito", "sans-serif"],
+        opensans: ["Open Sans", "sans-serif"],
       },
       colors: {
         theme: "#F26440",
